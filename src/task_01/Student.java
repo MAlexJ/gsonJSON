@@ -1,3 +1,4 @@
+package task_01;
 
 public class Student {
     private int id;
@@ -60,7 +61,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "task_01.Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +

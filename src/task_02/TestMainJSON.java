@@ -1,14 +1,17 @@
+package task_02;
+
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 /**
- * Created by Alex on 04.05.2015.
+ * Created by Alex on 08.05.2015.
  */
 public class TestMainJSON {
-
     public static void main(String[] args) {
-        Gson gson = new Gson();
-        Student student = new Student(1, "Vasja", 23);
-        System.out.println(">>>>>   Object -> Student");
+        Gson gson = new GsonBuilder().setPrettyPrinting().setDateFormat("yyyy-MM-dd' 'HH:mm:ss").create();
+
+        Student student = new Student(1, "Vasja", 23, "20120509");
+        System.out.println(">>>>>   Object -> task_01.Student");
         System.out.println(student);
 
 
@@ -22,6 +25,6 @@ public class TestMainJSON {
         Student studentJSON = gson.fromJson(json, Student.class);
         System.out.println(studentJSON);
 
-
     }
+
 }
