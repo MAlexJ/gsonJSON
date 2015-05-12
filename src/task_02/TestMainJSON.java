@@ -10,7 +10,7 @@ public class TestMainJSON {
     public static void main(String[] args) {
         Gson gson = new GsonBuilder().setPrettyPrinting().setDateFormat("yyyy-MM-dd' 'HH:mm:ss").create();
 
-        Student student = new Student(1, "Vasja", 23, "20120509");
+        Student student = new Student(1, "Vasja", 23, "21655569");
         System.out.println(">>>>>   Object -> task_01.Student");
         System.out.println(student);
 
